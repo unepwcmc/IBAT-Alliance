@@ -417,3 +417,18 @@ ul {
   bottom: 40px;
   right: 0px;
 }
+
+.sponsor-circle {
+  border: 1px solid #EEEEEE;
+  border-radius: 100em;
+  width: 200px;
+  height: 200px;
+  margin: 40px auto;
+}
+.sponsor-circle img {
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+

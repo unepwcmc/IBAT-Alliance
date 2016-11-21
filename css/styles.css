@@ -350,8 +350,8 @@ img::-moz-selection {
 }
 
 .logo {
-  width: 45px;
-  margin-right: 5px;
+  height: 45px;
+  margin-right: 25px;
 }
 
 h3, h4 { font-family: 'Roboto Slab', sans-serif; }

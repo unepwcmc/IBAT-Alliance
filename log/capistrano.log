@@ -1,0 +1,108 @@
+# Logfile created on 2016-12-06 11:37:59 +0000 by logger.rb/47272
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-12-06 11:37:59 +0000 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [ba0844e6] Running /usr/bin/env mkdir -p /tmp as wcmc@nrt.unep-wcmc.org
+ DEBUG [ba0844e6] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ba0844e6] Finished in 5.732 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-IBAT-Alliance-staging-spencerdixon.sh 0.0%
+  INFO Uploading /tmp/git-ssh-IBAT-Alliance-staging-spencerdixon.sh 100.0%
+  INFO [88215c16] Running /usr/bin/env chmod 700 /tmp/git-ssh-IBAT-Alliance-staging-spencerdixon.sh as wcmc@nrt.unep-wcmc.org
+ DEBUG [88215c16] Command: /usr/bin/env chmod 700 /tmp/git-ssh-IBAT-Alliance-staging-spencerdixon.sh
+  INFO [88215c16] Finished in 0.152 seconds with exit status 0 (successful).
+  INFO [677be8fe] Running /usr/bin/env git ls-remote --heads git@github.com:unepwcmc/IBAT-Alliance.git as wcmc@nrt.unep-wcmc.org
+ DEBUG [677be8fe] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-IBAT-Alliance-staging-spencerdixon.sh" ; /usr/bin/env git ls-remote --heads git@github.com:unepwcmc/IBAT-Alliance.git )
+ DEBUG [677be8fe] 	Permission denied (publickey).
+ DEBUG [677be8fe] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-12-06 11:38:17 +0000 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [dc0d313c] Running /usr/bin/env mkdir -p /tmp as wcmc@nrt.unep-wcmc.org
+ DEBUG [dc0d313c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [dc0d313c] Finished in 1.367 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-IBAT-Alliance-staging-spencerdixon.sh 0.0%
+  INFO Uploading /tmp/git-ssh-IBAT-Alliance-staging-spencerdixon.sh 100.0%
+  INFO [68a7c369] Running /usr/bin/env chmod 700 /tmp/git-ssh-IBAT-Alliance-staging-spencerdixon.sh as wcmc@nrt.unep-wcmc.org
+ DEBUG [68a7c369] Command: /usr/bin/env chmod 700 /tmp/git-ssh-IBAT-Alliance-staging-spencerdixon.sh
+  INFO [68a7c369] Finished in 0.169 seconds with exit status 0 (successful).
+  INFO [94d96fed] Running /usr/bin/env git ls-remote --heads git@github.com:unepwcmc/IBAT-Alliance.git as wcmc@nrt.unep-wcmc.org
+ DEBUG [94d96fed] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-IBAT-Alliance-staging-spencerdixon.sh" ; /usr/bin/env git ls-remote --heads git@github.com:unepwcmc/IBAT-Alliance.git )
+ DEBUG [94d96fed] 	f8807d491e6d2ce514776c55333085b0e77d1c75	refs/heads/master
+  INFO [94d96fed] Finished in 1.357 seconds with exit status 0 (successful).
+  INFO [63f6aeb4] Running /usr/bin/env mkdir -p /home/wcmc/IBAT-Alliance/shared /home/wcmc/IBAT-Alliance/releases as wcmc@nrt.unep-wcmc.org
+ DEBUG [63f6aeb4] Command: /usr/bin/env mkdir -p /home/wcmc/IBAT-Alliance/shared /home/wcmc/IBAT-Alliance/releases
+  INFO [63f6aeb4] Finished in 0.162 seconds with exit status 0 (successful).
+ DEBUG [04e865f6] Running [ -f /home/wcmc/IBAT-Alliance/current/REVISION ] as wcmc@nrt.unep-wcmc.org
+ DEBUG [04e865f6] Command: [ -f /home/wcmc/IBAT-Alliance/current/REVISION ]
+ DEBUG [04e865f6] Finished in 0.179 seconds with exit status 0 (successful).
+ DEBUG [faf6deb3] Running /usr/bin/env cat /home/wcmc/IBAT-Alliance/current/REVISION 2>/dev/null as wcmc@nrt.unep-wcmc.org
+ DEBUG [faf6deb3] Command: /usr/bin/env cat /home/wcmc/IBAT-Alliance/current/REVISION 2>/dev/null
+ DEBUG [faf6deb3] 	2194aa101c3867362356fa27b3a9655bb5b062c7
+ DEBUG [faf6deb3] Finished in 0.157 seconds with exit status 0 (successful).
+ DEBUG [cebe9e94] Running [ -f /home/wcmc/IBAT-Alliance/repo/HEAD ] as wcmc@nrt.unep-wcmc.org
+ DEBUG [cebe9e94] Command: [ -f /home/wcmc/IBAT-Alliance/repo/HEAD ]
+ DEBUG [cebe9e94] Finished in 0.160 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/wcmc/IBAT-Alliance/repo
+ DEBUG [4bcd5063] Running if test ! -d /home/wcmc/IBAT-Alliance/repo; then echo "Directory does not exist '/home/wcmc/IBAT-Alliance/repo'" 1>&2; false; fi as wcmc@nrt.unep-wcmc.org
+ DEBUG [4bcd5063] Command: if test ! -d /home/wcmc/IBAT-Alliance/repo; then echo "Directory does not exist '/home/wcmc/IBAT-Alliance/repo'" 1>&2; false; fi
+ DEBUG [4bcd5063] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO [ae7a0464] Running /usr/bin/env git remote update --prune as wcmc@nrt.unep-wcmc.org
+ DEBUG [ae7a0464] Command: cd /home/wcmc/IBAT-Alliance/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-IBAT-Alliance-staging-spencerdixon.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [ae7a0464] 	Fetching origin
+ DEBUG [ae7a0464] 	remote: Counting objects: 5, done.[K
+ DEBUG [ae7a0464] 	remote: Compressing objects:  50% (1/2)   [K
+ DEBUG [ae7a0464] 	remote: Compressing objects: 100% (2/2)   [K
+ DEBUG [ae7a0464] 	remote: Compressing objects: 100% (2/2), done.[K
+ DEBUG [ae7a0464] 	remote: Total 5 (delta 3), reused 5 (delta 3), pack-reused 0[K
+ DEBUG [ae7a0464] 	Unpacking objects:  20% (1/5)   
+ DEBUG [ae7a0464] 	Unpacking objects:  40% (2/5)   
+ DEBUG [ae7a0464] 	Unpacking objects:  60% (3/5)   
+ DEBUG [ae7a0464] 	Unpacking objects:  80% (4/5)   
+ DEBUG [ae7a0464] 	Unpacking objects: 100% (5/5)   
+ DEBUG [ae7a0464] 	Unpacking objects: 100% (5/5), done.
+ DEBUG [ae7a0464] 	From github.com:unepwcmc/IBAT-Alliance
+   2194aa1..f8807d4  master     -> master
+  INFO [ae7a0464] Finished in 1.569 seconds with exit status 0 (successful).
+ DEBUG [984d036f] Running if test ! -d /home/wcmc/IBAT-Alliance/repo; then echo "Directory does not exist '/home/wcmc/IBAT-Alliance/repo'" 1>&2; false; fi as wcmc@nrt.unep-wcmc.org
+ DEBUG [984d036f] Command: if test ! -d /home/wcmc/IBAT-Alliance/repo; then echo "Directory does not exist '/home/wcmc/IBAT-Alliance/repo'" 1>&2; false; fi
+ DEBUG [984d036f] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [ece2ff92] Running /usr/bin/env mkdir -p /home/wcmc/IBAT-Alliance/releases/20161206113822 as wcmc@nrt.unep-wcmc.org
+ DEBUG [ece2ff92] Command: cd /home/wcmc/IBAT-Alliance/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-IBAT-Alliance-staging-spencerdixon.sh" ; /usr/bin/env mkdir -p /home/wcmc/IBAT-Alliance/releases/20161206113822 )
+  INFO [ece2ff92] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [b10bebcf] Running /usr/bin/env git archive master | tar -x -f - -C /home/wcmc/IBAT-Alliance/releases/20161206113822 as wcmc@nrt.unep-wcmc.org
+ DEBUG [b10bebcf] Command: cd /home/wcmc/IBAT-Alliance/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-IBAT-Alliance-staging-spencerdixon.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/wcmc/IBAT-Alliance/releases/20161206113822 )
+  INFO [b10bebcf] Finished in 0.174 seconds with exit status 0 (successful).
+ DEBUG [55e81166] Running if test ! -d /home/wcmc/IBAT-Alliance/repo; then echo "Directory does not exist '/home/wcmc/IBAT-Alliance/repo'" 1>&2; false; fi as wcmc@nrt.unep-wcmc.org
+ DEBUG [55e81166] Command: if test ! -d /home/wcmc/IBAT-Alliance/repo; then echo "Directory does not exist '/home/wcmc/IBAT-Alliance/repo'" 1>&2; false; fi
+ DEBUG [55e81166] Finished in 0.149 seconds with exit status 0 (successful).
+ DEBUG [cffa00ea] Running /usr/bin/env git rev-list --max-count=1 master as wcmc@nrt.unep-wcmc.org
+ DEBUG [cffa00ea] Command: cd /home/wcmc/IBAT-Alliance/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-IBAT-Alliance-staging-spencerdixon.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [cffa00ea] 	f8807d491e6d2ce514776c55333085b0e77d1c75
+ DEBUG [cffa00ea] Finished in 0.209 seconds with exit status 0 (successful).
+ DEBUG [878cc31e] Running if test ! -d /home/wcmc/IBAT-Alliance/releases/20161206113822; then echo "Directory does not exist '/home/wcmc/IBAT-Alliance/releases/20161206113822'" 1>&2; false; fi as wcmc@nrt.unep-wcmc.org
+ DEBUG [878cc31e] Command: if test ! -d /home/wcmc/IBAT-Alliance/releases/20161206113822; then echo "Directory does not exist '/home/wcmc/IBAT-Alliance/releases/20161206113822'" 1>&2; false; fi
+ DEBUG [878cc31e] Finished in 0.199 seconds with exit status 0 (successful).
+  INFO [1880cc2e] Running /usr/bin/env echo "f8807d491e6d2ce514776c55333085b0e77d1c75" >> REVISION as wcmc@nrt.unep-wcmc.org
+ DEBUG [1880cc2e] Command: cd /home/wcmc/IBAT-Alliance/releases/20161206113822 && /usr/bin/env echo "f8807d491e6d2ce514776c55333085b0e77d1c75" >> REVISION
+  INFO [1880cc2e] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [c15adb1e] Running /usr/bin/env ln -s /home/wcmc/IBAT-Alliance/releases/20161206113822 /home/wcmc/IBAT-Alliance/releases/current as wcmc@nrt.unep-wcmc.org
+ DEBUG [c15adb1e] Command: /usr/bin/env ln -s /home/wcmc/IBAT-Alliance/releases/20161206113822 /home/wcmc/IBAT-Alliance/releases/current
+  INFO [c15adb1e] Finished in 0.167 seconds with exit status 0 (successful).
+  INFO [ec093e62] Running /usr/bin/env mv /home/wcmc/IBAT-Alliance/releases/current /home/wcmc/IBAT-Alliance as wcmc@nrt.unep-wcmc.org
+ DEBUG [ec093e62] Command: /usr/bin/env mv /home/wcmc/IBAT-Alliance/releases/current /home/wcmc/IBAT-Alliance
+  INFO [ec093e62] Finished in 0.158 seconds with exit status 0 (successful).
+ DEBUG [525628a5] Running /usr/bin/env ls -xtr /home/wcmc/IBAT-Alliance/releases as wcmc@nrt.unep-wcmc.org
+ DEBUG [525628a5] Command: /usr/bin/env ls -xtr /home/wcmc/IBAT-Alliance/releases
+ DEBUG [525628a5] 	20161108125145	20161108125229	20161111111101	20161129103952	20161206113822
+ DEBUG [525628a5] Finished in 0.155 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 5 deployed releases on nrt.unep-wcmc.org
+  INFO No old releases (keeping newest 5) on nrt.unep-wcmc.org
+ DEBUG [e587b252] Running if test ! -d /home/wcmc/IBAT-Alliance/releases; then echo "Directory does not exist '/home/wcmc/IBAT-Alliance/releases'" 1>&2; false; fi as wcmc@nrt.unep-wcmc.org
+ DEBUG [e587b252] Command: if test ! -d /home/wcmc/IBAT-Alliance/releases; then echo "Directory does not exist '/home/wcmc/IBAT-Alliance/releases'" 1>&2; false; fi
+ DEBUG [e587b252] Finished in 0.181 seconds with exit status 0 (successful).
+  INFO [c01ca2ac] Running /usr/bin/env echo "Branch master (at f8807d491e6d2ce514776c55333085b0e77d1c75) deployed as release 20161206113822 by spencerdixon" >> /home/wcmc/IBAT-Alliance/revisions.log as wcmc@nrt.unep-wcmc.org
+ DEBUG [c01ca2ac] Command: cd /home/wcmc/IBAT-Alliance/releases && /usr/bin/env echo "Branch master (at f8807d491e6d2ce514776c55333085b0e77d1c75) deployed as release 20161206113822 by spencerdixon" >> /home/wcmc/IBAT-Alliance/revisions.log
+  INFO [c01ca2ac] Finished in 0.148 seconds with exit status 0 (successful).

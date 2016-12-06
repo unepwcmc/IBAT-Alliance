@@ -364,12 +364,12 @@ p {
 
 .promo {
   text-align: center;
-  height: 550px;
+  height: 580px;
 }
 
 .promo img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 140px;
   margin: 50px auto;
 }
 .promo .card-title {

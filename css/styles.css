@@ -362,7 +362,11 @@ p {
 
 .text-primary { color: #7D342D !important; }
 
-.promo { text-align: center; }
+.promo {
+  text-align: center;
+  height: 550px;
+}
+
 .promo img {
   width: 100px;
   height: 100px;
@@ -432,3 +436,6 @@ ul {
   border-radius: 100em;
 }
 
+.users ul {
+  line-height: 1.6em;
+}
